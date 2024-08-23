@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('.slider').bxSlider({
-      mode: 'fade',
+      mode: 'horizontal',
       captions: true,
-      adaptiveHeight: true,
+      slideWidth: 400
     });
 
     $('.slider2').bxSlider({
@@ -10,6 +10,6 @@ $(document).ready(function(){
         autoControls: true,
         stopAutoOnClick: true,
         pager: true,
-        adaptiveHeight: true,
+        slideWidth: 400
     });
   });
