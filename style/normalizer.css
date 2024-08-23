@@ -47,6 +47,7 @@ header nav ul li{
     list-style-type: none;
     text-align: center;
     background-color: var(--buttons);
+    border-radius: 4px;
     padding: 5px;
     width: 100px;
     margin: 0.4rem;
@@ -63,13 +64,15 @@ main{
 section {
     margin: 2rem 0;
 }
-.home-image img{
+.home img{
     width: 100%;
     margin: 1rem auto;
     border-radius: 24px;
 }
-.about-content img {
+.about img {
     width: 100%;
+    margin: 1rem auto;
+    border-radius: 24px;
 }
 .service-item + .service-item{
     margin-top: 5rem;
@@ -84,8 +87,8 @@ section {
 footer{
     background-color: var(--footer);
     color: #fff;
-    
-    padding: 40px 20px;
+    width: calc(100% - 4rem);
+    padding: 4rem 2rem;
     text-align: center;
 }
 .contact-content h2 {
@@ -113,9 +116,46 @@ footer{
 /* Tablette */
 @media (min-width: 768px) {
     body {
-        background-color: #ffc400;
+        background-color: var(--backgroud);
         font-size: 20px;
-        padding: 40px;
+    }
+    main{
+        font-size: 18px;
+        padding: 3rem;
+        width: calc(100% 6rem);
+    }
+    .home-content{
+        height: 350px;
+    }
+    .home img{
+        width: 50%;
+        float: left;
+        margin: 1rem 1rem 0 0;
+    }
+    .about-content{
+        height: 450px;
+    }
+    .about-content img {
+        width: 50%;
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
+    .service-item{
+        margin: 0 auto;
+    }
+    .service-item + .service-item{
+        margin-top: 3rem;
+    }
+    .service-item .caroussel img{
+        object-fit: cover;
+    }
+    .bx-wrapper{
+        margin: 0 auto;
+        min-width: 80%;
+    }
+    .bx-viewport{
+        max-height: 400px;
+        object-fit: cover;
     }
 }
 
